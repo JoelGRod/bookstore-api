@@ -1,3 +1,13 @@
+## Steps:
+- Clone project
+- Create Database
+- Modify .env file with your database connection
+- Execute: php artisan migrate
+- Execute: php artisan passport install   // Create Personal Access Client and Password Grant Client
+- Modify .env file with the id and client_secret with the last command creation
+    - PASSPORT_PERSONAL_ACCESS_CLIENT_ID=id goes here
+    - PASSPORT_PERSONAL_ACCESS_CLIENT_SECRET=secret goes here
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
