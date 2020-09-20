@@ -3,7 +3,7 @@
 - Create Database
 - Modify .env file with your database connection
 - Execute: php artisan migrate
-- Execute: php artisan passport install   // Create Personal Access Client and Password Grant Client
+- Execute: php artisan passport:install   // Create Personal Access Client and Password Grant Client
 - Modify .env file with the id and client_secret with the last command creation
     - PASSPORT_PERSONAL_ACCESS_CLIENT_ID=id goes here
     - PASSPORT_PERSONAL_ACCESS_CLIENT_SECRET=secret goes here
