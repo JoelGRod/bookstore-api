@@ -33,12 +33,12 @@ HTTP Method / Path
 - POST /sales
     - books: Mandatory, array listing the books id to buy and their amounts ["Book-id-1": amount, "Book-id-2": amount]
 
--GET /sales
+- GET /sales
     - from: Optional, return sales from specified date
     - page: Optional, default 1, specifies the page to return
     - page-size: Optional, default 50, specifies the number of sales per page
 
-GET /sales/<sales id>
+- GET /sales/<sales id>
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
