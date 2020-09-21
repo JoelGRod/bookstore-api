@@ -31,7 +31,7 @@ HTTP Method / Path
 - PUT /borrowed-books/<borrowed book id>/return
     
 - POST /sales
-    - books: Mandatory, array listing the books id to buy and their amounts ["Book-id-1": amount, "Book-id-2": amount]
+    - books: Mandatory, array listing the books id to buy and their amounts {"Book-id-1": amount, "Book-id-2": amount}
 
 - GET /sales
     - from: Optional, return sales from specified date
