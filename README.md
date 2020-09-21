@@ -1,4 +1,4 @@
-## Steps:
+## Initial Configuration Steps:
 - Clone project
 - Create Database
 - Modify .env file with your database connection
@@ -7,6 +7,38 @@
 - Modify .env file with the id and client_secret with the last command creation
     - PASSPORT_PERSONAL_ACCESS_CLIENT_ID=id goes here
     - PASSPORT_PERSONAL_ACCESS_CLIENT_SECRET=secret goes here
+
+## Endpoints
+HTTP Method / Path
+    Optional parameters
+
+- GET /books
+    - title: Optional and filters by title
+    - author: Optional and filters by author
+    - page: Optional, default 1, specifies the page to return
+    - page-size: Optional, default 50, specifies the page size to return
+
+- GET /books/<book id>
+
+- POST /borrowed-books
+    - book-id: Mandatory, specifies the ID of the book to borrow
+
+- GET /borrowed-books
+    - from: Optional and returns borrowed books from the specified date
+    - page: Optional, default 1, and specifies the page to return
+    - page-size: Optional, default 50, Specifies the number of borrowed books per page
+
+- PUT /borrowed-books/<borrowed book id>/return
+    
+- POST /sales
+    - books: Mandatory, array listing the books id to buy and their amounts ["Book-id-1": amount, "Book-id-2": amount]
+
+-GET /sales
+    - from: Optional, return sales from specified date
+    - page: Optional, default 1, specifies the page to return
+    - page-size: Optional, default 50, specifies the number of sales per page
+
+GET /sales/<sales id>
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
