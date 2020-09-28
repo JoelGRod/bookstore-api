@@ -9,6 +9,7 @@ class Book extends Model
 {
     use HasFactory;
     public $timestamps = false;
+    protected $fillable = ['isbn', 'title', 'author', 'stock', 'price'];
 
     public function borrowedBooks() {
         return $this->hasMany('App\Models\BorrowedBook');
